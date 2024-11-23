@@ -1,0 +1,125 @@
+{
+  "info": {
+    "_postman_id": "0a400ec9-10c6-4032-b4c8-477bbe8947f1",
+    "name": "PK-ERMS",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "5539390"
+  },
+  "item": [
+    {
+      "name": "getAllFiles",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base-url}}/files",
+          "host": [
+            "{{base-url}}"
+          ],
+          "path": [
+            "files"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getFileByUUID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base-url}}/files/7c9ef112-1282-4cf6-b8a6-961c57e53f5c",
+          "host": [
+            "{{base-url}}"
+          ],
+          "path": [
+            "files",
+            "7c9ef112-1282-4cf6-b8a6-961c57e53f5c"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "createFile",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"userId\": \"940be04d-f0a4-4408-b120-93e2e400f72c\",\r\n    \"name\": \"file7\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base-url}}/files",
+          "host": [
+            "{{base-url}}"
+          ],
+          "path": [
+            "files"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "updateFile",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"userId\": \"940be04d-f0a4-4408-b120-93e2e400f72c\",\r\n    \"name\": \"file29\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base-url}}/files/3432fa7f-4516-4ed6-8086-ff7dcb51cf3a",
+          "host": [
+            "{{base-url}}"
+          ],
+          "path": [
+            "files",
+            "3432fa7f-4516-4ed6-8086-ff7dcb51cf3a"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "deleteFile",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"user_id\": \"940be04d-f0a4-4408-b120-93e2e400f72c\",\r\n    \"name\": \"file25\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base-url}}/files/7c9ef112-1282-4cf6-b8a6-961c57e53f5c",
+          "host": [
+            "{{base-url}}"
+          ],
+          "path": [
+            "files",
+            "7c9ef112-1282-4cf6-b8a6-961c57e53f5c"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
